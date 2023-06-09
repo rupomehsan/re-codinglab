@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg navbar-light pb-0">
             <div class="container-fluid ">
 
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="{{url('/')}}">
                     <img src="{{asset('assets/images/bd.gif')}}" class="img-fluid mt-40" height="50" width="100" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
                         <div class="logo-section">
                             <div class="header-logo">
                                 <div class="header-br"></div>
-                                <div class="logo"><a href="index.php" title=""><img class="" height="100" width="100" src="{{asset('assets')}}/images/logoicon.png" alt="logo"></a></div>
+                                <div class="logo"><a href="{{url('/')}}" title=""><img class="" height="100" width="100" src="{{asset('assets')}}/images/logoicon.png" alt="logo"></a></div>
                                 <span _ngcontent-lgt-c89="" class="heartbit" style="margin-top: 40px;"></span>
                                 <span _ngcontent-lgt-c89="" class="point"></span>
                             </div>
@@ -60,7 +60,7 @@
                     <p class="text-uppercase text-center text-white">Fullstack web developer</p>
                     <ul class="list-unstyled text-center offcanvas-nav-items">
                         <li class=" ">
-                            <a href="{{'/'}}#headerSection" class="text-decoration-none ">Home</a>
+                            <a href="{{'/'}}" class="text-decoration-none ">Home</a>
                         </li>
                         <li class="">
                             <a href="{{'/'}}#aboutSection" class="text-decoration-none ">About</a>

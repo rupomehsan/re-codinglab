@@ -1,150 +1,108 @@
 @extends('layouts.app')
 @section('content')
-<div class="row wrapper">
-    <div class="col-md-9">
 
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card bg-dark text-white py-3 ">
-                    <div class="px-3">
-                        <h2>TITLE HEADING</h2>
-                        <h5>Title description, Dec 7, 2017</h5>
-                    </div>
+<div class="wrapper">
+    <x-section-title title="all blogs" />
+    <div class="row my80">
+        <div class="col-md-4">
 
-                    <div class="p-1" style="height:200px;">
-                        <!-- <img src="{{asset('')}}" alt=""> -->
-                        <div class="h-100 p-0">
-                            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/dTFXufTgfOE"
-                                title="Build a Fullstack E-commerce using Next.js (react.js, mongo, tailwind, styled components)"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+            <div class="column">
+                <!-- Post-->
+                <div class="post-module">
+                    <!-- Thumbnail-->
+                    <div class="thumbnail">
+                        <div class="date">
+                            <div class="day">27</div>
+                            <div class="month">Mar</div>
+                        </div>
+                        <div style="height:300px;">
+                            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/c_-b_isI4vg" title="Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
-
-                    <div class="p-3">
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-                            sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                        <button class="btn-primary">see more</button>
-                        <p>view : 100K</p>
-                        <p>like : 100K</p>
-                        <p>comments : 100K</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card bg-dark text-white py-3 ">
-                    <div class="px-3">
-                        <h2>TITLE HEADING</h2>
-                        <h5>Title description, Dec 7, 2017</h5>
-                    </div>
-
-                    <div class="border p-1" style="height:200px;">
-                        <!-- <img src="{{asset('')}}" alt=""> -->
-                        <div class="h-100 p-0">
-                            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/dTFXufTgfOE"
-                                title="Build a Fullstack E-commerce using Next.js (react.js, mongo, tailwind, styled components)"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <div class="p-3">
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-                            sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-
-                        <a href="{{url('/blog-details')}}" class="btn btn-primary">see more</a>
-                        <p>view : 100K</p>
-                        <p>like : 100K</p>
-                        <p>comments : 100K</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card bg-dark text-white py-3 ">
-                    <div class="px-3">
-                        <h2>TITLE HEADING</h2>
-                        <h5>Title description, Dec 7, 2017</h5>
-                    </div>
-
-                    <div class="border p-1" style="height:200px;">
-                        <!-- <img src="{{asset('')}}" alt=""> -->
-                        <div class="h-100 p-0">
-                            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/dTFXufTgfOE"
-                                title="Build a Fullstack E-commerce using Next.js (react.js, mongo, tailwind, styled components)"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <div class="p-3">
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-                            sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                        <button class="btn-primary">see more</button>
-                        <p>view : 100K</p>
-                        <p>like : 100K</p>
-                        <p>comments : 100K</p>
+                    <!-- Post Content-->
+                    <div class="post-content">
+                        <div class="category"> <a href="{{url('blog-details')}}">Details</a></div>
+                        <h1 class="title">City Lights in New York</h1>
+                        <h2 class="sub_title">The city that never sleeps.</h2>
+                        <p class="description">New York, the largest city in the U.S., is an architectural
+                            marvel with
+                            plenty of historic monuments, magnificent buildings and countless dazzling
+                            skyscrapers.</p>
+                        <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins
+                                ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39
+                                    comments</a></span></div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-    </div>
-    <div class="col-md-3">
-        <div class=" border">
-            <aside>
-                <h3>Categories</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">Technology</li>
-                    <li class="list-group-item">Travel</li>
-                    <li class="list-group-item">Food</li>
-                    <li class="list-group-item">Fashion</li>
-                </ul>
+        <div class="col-md-4">
 
-                <h3>Recent Posts</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">Post 1</li>
-                    <li class="list-group-item">Post 2</li>
-                    <li class="list-group-item">Post 3</li>
-                    <li class="list-group-item">Post 4</li>
-                </ul>
-                <h3>populer Posts</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">Post 1</li>
-                    <li class="list-group-item">Post 2</li>
-                    <li class="list-group-item">Post 3</li>
-                    <li class="list-group-item">Post 4</li>
-                </ul>
-                <h3>Tags</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">Post 1</li>
-                    <li class="list-group-item">Post 2</li>
-                    <li class="list-group-item">Post 3</li>
-                    <li class="list-group-item">Post 4</li>
-                </ul>
-            </aside>
+            <div class="column">
+                <!-- Post-->
+                <div class="post-module">
+                    <!-- Thumbnail-->
+                    <div class="thumbnail">
+                        <div class="date">
+                            <div class="day">27</div>
+                            <div class="month">Mar</div>
+                        </div>
+                        <div style="height:300px;">
+                            <!-- <img src="{{asset('')}}" alt=""> -->
+                            <div class="h-100 p-0">
+                                <iframe class="w-100 h-100" src="https://www.youtube.com/embed/dTFXufTgfOE" title="Build a Fullstack E-commerce using Next.js (react.js, mongo, tailwind, styled components)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content-->
+                    <div class="post-content">
+                        <div class="category"> <a href="{{url('blog-details')}}">Details</a></div>
+                        <h1 class="title">City Lights in New York</h1>
+                        <h2 class="sub_title">The city that never sleeps.</h2>
+                        <p class="description ">New York, the largest city in the U.S., is an architectural
+                            marvel with
+                            plenty of historic monuments, magnificent buildings and countless dazzling
+                            skyscrapers.</p>
+                        <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins
+                                ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39
+                                    comments</a></span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+
+            <div class="column">
+                <!-- Post-->
+                <div class="post-module">
+                    <!-- Thumbnail-->
+                    <div class="thumbnail">
+                        <div class="date">
+                            <div class="day">27</div>
+                            <div class="month">Mar</div>
+                        </div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" />
+                    </div>
+                    <!-- Post Content-->
+                    <div class="post-content">
+                        <div class="category"> <a href="{{url('blog-details')}}">Details</a></div>
+                        <h1 class="title">City Lights in New York</h1>
+                        <h2 class="sub_title">The city that never sleeps.</h2>
+                        <p class="description ">New York, the largest city in the U.S., is an architectural
+                            marvel with
+                            plenty of historic monuments, magnificent buildings and countless dazzling
+                            skyscrapers.</p>
+                        <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins
+                                ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39
+                                    comments</a></span></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
 </div>
-
-
 
 @endsection

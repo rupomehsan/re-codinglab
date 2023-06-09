@@ -25,6 +25,14 @@ Route::get('/blogs', function () {
 Route::get('/blog-details', function () {
     return view('frontend.blog.single-blog');
 });
+
+
+Route::get('/all-projects', function () {
+    return view('frontend.project.index');
+});
+
+
+
 Route::get('/registration', function () {
     return view('frontend.registration.index');
 });
