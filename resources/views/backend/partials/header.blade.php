@@ -15,7 +15,6 @@
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="/js/sweat-alert.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('backend') }}/app-assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('backend') }}/app-assets/css/bootstrap-extended.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('backend') }}/app-assets/css/colors.min.css">
@@ -23,48 +22,17 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('backend') }}/app-assets/css/themes/dark-layout.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('backend') }}/app-assets/css/themes/bordered-layout.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('backend') }}/app-assets/css/themes/semi-dark-layout.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="{{ asset('backend') }}/datetimepicker/css/tempusdominus-bootstrap-4.min.css">
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="{{ asset('backend') }}/app-assets/css/core/menu/vertical-menu.min.css">
-    <!-- END: Page CSS-->
-
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="{{ asset('backend') }}/assets/css/style.css">
     <!-- END: Custom CSS-->
     <!-- <link rel="stylesheet" href="{{ asset('backend') }}/assets/tailwind/tailwind.css"> -->
     <link rel="stylesheet" href="{{ asset('backend') }}/assets/backend.css">
-    <script src="/js/vue/dashboard.js" defer></script>
-    <script>
-        const Toast = Swal.mixin({
-            toast: true,
-            position: 'top-end',
-            showConfirmButton: false,
-            timer: 2000,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-                toast.addEventListener('mouseenter', Swal.stopTimer)
-                toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-        })
-        window.s_alert = (title = "success", icon = 'success') => {
-            Toast.fire({
-                icon,
-                title
-            })
-        };
-        window.s_confirm = async (title = "Are you sure?", confirmButtonText = 'Yes, do it!', icon = 'warning') => {
-            let result = await Swal.fire({
-                title,
-                text: "",
-                icon,
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText
-            })
-            return result.isConfirmed ? true : false;
-        }
-    </script>
+    @livewireStyles
 </head>
 <!-- END: Head-->
 

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.frontend')
 @section('content')
 <div class="wrapper ">
     <x-section-title title="all projects" />

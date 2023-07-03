@@ -1,6 +1,12 @@
 <?php
 
+use App\Http\Livewire\Admin\Blog\Create;
+use App\Http\Livewire\Admin\Blog\Edit;
+use App\Http\Livewire\Admin\Blog\Index;
+use App\Http\Livewire\Admin\Category\Category;
+use App\Http\Livewire\Admin\Dashboard;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +25,7 @@ Route::get('/', function () {
 Route::get('/all-doners', function () {
     return view('frontend.doner.index');
 });
-Route::get('/blogs', function () {
+Route::get('/all-blogs', function () {
     return view('frontend.blog.index');
 });
 Route::get('/blog-details', function () {
@@ -42,13 +48,10 @@ Route::get('/admin/login', function () {
 });
 
 
-Route::get('/admin/dashboard', function () {
-    return view('backend.dashboard.index');
-});
-
-Route::get('/admin/category', function () {
-    return view('backend.category.index');
-});
-Route::get('/admin/category/create', function () {
-    return view('backend.category.create');
+Route::prefix('admin')->group(function () {
+    Route::get('dashboard', Dashboard::class)->name('admin.dashboard');
+    Route::get('category', Category::class)->name('admin.category');
+    Route::get('blogs', Index::class)->name('admin.blogs');
+    Route::get('blogs/create', Create::class)->name('admin.blog.create');
+    Route::get('blogs/edit/{item}', Edit::class)->name('admin.blog.edit');
 });

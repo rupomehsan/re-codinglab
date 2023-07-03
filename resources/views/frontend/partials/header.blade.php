@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello, world!</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
     <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
@@ -15,14 +15,15 @@
 
 <body>
 
-    <header id="headerSection" class="sticky-top ">
+    <header id="headerSection" class="sticky-top  border-bottom">
         <nav class="navbar navbar-expand-lg navbar-light pb-0">
             <div class="container-fluid ">
 
                 <a class="navbar-brand" href="{{url('/')}}">
-                    <img src="{{asset('assets/images/bd.gif')}}" class="img-fluid mt-40" height="50" width="100" alt="">
+                    <img src="{{asset('assets/images/bd.gif')}}" class="img-fluid " height="50" width="100" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarText">
@@ -30,14 +31,16 @@
                         <div class="logo-section">
                             <div class="header-logo">
                                 <div class="header-br"></div>
-                                <div class="logo"><a href="{{url('/')}}" title=""><img class="" height="100" width="100" src="{{asset('assets')}}/images/logoicon.png" alt="logo"></a></div>
+                                <div class="logo"><a href="{{url('/')}}" title=""><img class="" height="100" width="100"
+                                            src="{{asset('assets')}}/images/logoicon.png" alt="logo"></a></div>
                                 <span _ngcontent-lgt-c89="" class="heartbit" style="margin-top: 40px;"></span>
                                 <span _ngcontent-lgt-c89="" class="point"></span>
                             </div>
                         </div>
                     </ul>
-                    <span class="navbar-text mt-50">
-                        <button class="swich-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <span class="navbar-text ">
+                        <button class="swich-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <!-- <span class="iconify " data-icon="ep:menu"></span> -->
                         </button>
 
@@ -51,7 +54,9 @@
 
         <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class=" position-relative  ">
-                <button class="btn-close text-reset position-absolute top-0 left-0  p-2 bg-danger border-ra" data-bs-dismiss="offcanvas" aria-label="Close" style="margin-left:-32px;border-radius: 0px;"></button>
+                <button class="btn-close text-reset position-absolute top-0 left-0  p-2 bg-danger border-ra"
+                    data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="margin-left:-32px;border-radius: 0px;"></button>
             </div>
             <div class="offcanvas-body">
                 <img src="{{asset('assets/images/profile.jpg')}}" class="img-fluid box-shadow rounded p-1" alt="">
@@ -81,16 +86,7 @@
                             <a href="{{'/'}}#contactSection" class="text-decoration-none ">Contact</a>
                         </li>
                         <li class="">
-                            <a href="{{url('blogs')}}" class="text-decoration-none ">My Blogs</a>
-                        </li>
-
-
-                        <li class="">
-                            <a href="{{url('all-doners')}}" class="text-decoration-none ">All Doners</a>
-                        </li>
-
-                        <li class="">
-                            <a href="{{url('registration')}}" class="text-decoration-none ">Registration</a>
+                            <a href="{{url('all-blogs')}}" class="text-decoration-none ">My Blogs</a>
                         </li>
                         <li class="">
                             <a href="{{url('/admin/login')}}" class="text-decoration-none ">Login</a>

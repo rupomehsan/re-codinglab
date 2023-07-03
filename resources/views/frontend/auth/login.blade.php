@@ -1,18 +1,31 @@
-@extends('layouts.app')
+@extends('layouts.frontend')
 @section('content')
 <div>
-    <form>
-
-        <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+    <section class="contact contact-bg my80" id="contact">
+        <div class="wrapper">
+            <x-section-title title="Admin login" />
+            <div class=" w-50 m-auto py-5 box-shadow bg-waterlap">
+                <div class="container-contact100">
+                    <div class="wrap-contact100">
+                        <form id="contactForm" class="contact100-form">
+                            <div class="wrap-input100 validate-input mt-20" data-validate="Valid email is required: ex@abc.xyz">
+                                <input id="email" class="input100" type="email" name="email" placeholder="Enter your email">
+                                <span class="focus-input100"></span>
+                            </div>
+                            <div class="wrap-input100 validate-input mt-20" data-validate="Valid email is required: ex@abc.xyz">
+                                <input id="email" class="input100" type="password" name="email" placeholder="Enter your email">
+                                <span class="focus-input100"></span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center w-100">
+                                <button class="submit-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="name" class="form-label">Passeord</label>
-            <input type="password" class="form-control" id="name" placeholder="Enter your full name" required>
-        </div>
+</div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+</section>
 </div>
 @endsection

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.frontend')
 @section('content')
 <div id="bannerSection" class=" overflow-hidden vh-100 ">
     <div class="back-circle-one"></div>
@@ -897,7 +897,7 @@
         </div>
 
         <div class="w-25 m-auto my-5">
-            <a href="{{url('all-projects')}}" class="link all-btn">
+            <a href="{{url('all-blogs')}}" class="link all-btn">
                 <span data-hover="click here" class="py-3 text-gray">see my all blogs</span>
             </a>
         </div>

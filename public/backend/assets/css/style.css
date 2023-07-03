@@ -122,3 +122,10 @@ a.bg-lightest:hover,a.bg-lightest:focus {
     background-color: #3a3b64 !important;
     color: #7367f0 !important
 }
+
+.is-invalid{
+    border: 1px solid #EA5455 !important;
+}
+.toast-success {
+    background-color: #51A351 !important;
+}

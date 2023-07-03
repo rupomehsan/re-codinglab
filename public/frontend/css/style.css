@@ -80,6 +80,11 @@ li.pill:hover {
 li.pill a {
    color: white;
 }
+
+.bg-waterlap{
+   background-color: #00000047;
+}
+
 /* header start section  */
 /* header section  */
 /* header section  */
@@ -100,7 +105,11 @@ li.pill a {
    top: -10px;
    left: -60px;
 }
-
+.navbar-expand-lg .navbar-collapse {
+   display: flex!important;
+   flex-basis: auto;
+   height: 60px;
+}
 .swich-btn {
    width: 50px;
    height: 50px;
@@ -830,7 +839,8 @@ li.pill a {
    box-shadow: inset 1px 0px 8px 9px rgba(0, 0, 0, 0.07);
    /* margin-bottom: 20px; */
    position: relative;
-   background: radial-gradient(#ff1c1c82,#0000ff4d,#111111b8,#f6f6f6);
+   background: radial-gradient(#ff1c1c82,#ff3b004d,#b9b9b9b8,#f6f6f6);
+   animation: rotate 45s linear infinite;
 }
 .serviceBox .title{
    font-size: 12px;

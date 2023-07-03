@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.frontend')
 @section('content')
 <div class="wrapper">
     <table class="table table-primary table-striped table-dark table-hover">

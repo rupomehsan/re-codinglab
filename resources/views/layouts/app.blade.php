@@ -1,5 +1,6 @@
-@include('frontend.partials.header')
+@include('backend.partials.header')
+@include('backend.partials.sitenav')
 <main>
-    @yield('content')
+    {{$slot}}
 </main>
-@include('frontend.partials.footer')
+@include('backend.partials.footer')
