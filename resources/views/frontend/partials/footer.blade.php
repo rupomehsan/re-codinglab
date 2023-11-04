@@ -13,14 +13,20 @@
                                     <div class="social-left">
 
                                         <li>
-                                            <a href="https://www.facebook.com/rupom.ehsan.5/" title=""><span class="iconify" data-icon="logos:facebook"></span></a>
+                                            <a href="https://www.facebook.com/rupom.ehsan.5/" title=""><span
+                                                    class="iconify" data-icon="logos:facebook"></span></a>
                                         </li>
-                                        <li><a href="https://twitter.com/EhsanRupom" title=""><span class="iconify" data-icon="devicon:twitter"></span></a></li>
+                                        <li><a href="https://twitter.com/EhsanRupom" title=""><span class="iconify"
+                                                    data-icon="devicon:twitter"></span></a></li>
                                         <li>
-                                            <a href="https://www.youtube.com/channel/UChAz_f_ngfpsBTSC2OgrRug?view_as=subscriber" title=""><span class="iconify" data-icon="entypo-social:youtube-with-circle"></span></a>
+                                            <a href="https://www.youtube.com/channel/UChAz_f_ngfpsBTSC2OgrRug?view_as=subscriber"
+                                                title=""><span class="iconify"
+                                                    data-icon="entypo-social:youtube-with-circle"></span></a>
                                         </li>
-                                        <li><a href="https://github.com/rupomehsan" title=""><span class="iconify" data-icon="devicon:github"></span></a></li>
-                                        <li><a href="https://github.com/rupomehsan" title=""><span class="iconify" data-icon="devicon:linkedin"></span></a></li>
+                                        <li><a href="https://github.com/rupomehsan" title=""><span class="iconify"
+                                                    data-icon="devicon:github"></span></a></li>
+                                        <li><a href="https://github.com/rupomehsan" title=""><span class="iconify"
+                                                    data-icon="devicon:linkedin"></span></a></li>
                                     </div>
                                 </ul>
 
@@ -50,7 +56,8 @@
                         <h5>Contact Info</h5>
                         <ul class="text-justify">
                             <li class="m-0 p-0"><span>Phone : </span> +8801683392241,01738202364</li>
-                            <li class="m-0 p-0"><span class="d-flex gap-3 ">Email : <div class="text-lowercase text-white bolder">
+                            <li class="m-0 p-0"><span class="d-flex gap-3 ">Email : <div
+                                        class="text-lowercase text-white bolder">
                                         rupomehsan34@gmail.com</div>
                             </li>
                             <li class="m-0 p-0"><span>Address : </span> DHAKA, BANGLADESH</li>
@@ -71,14 +78,16 @@
 </footer>
 
 <script src="{{asset('frontend')}}/js/jquery-2.1.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
 </script>
 <script src="{{asset('assets')}}/js/owl.carousel.min.js"></script>
 <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
-<!-- <script src="{{asset('frontend')}}/js/scrolling-parallax.js"></script> -->
+<script src="{{asset('frontend')}}/js/scrolling-parallax.js"></script>
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('frontend/js/custom.js')}}"></script>
-<script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
+<script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js"
+    data-turbolinks-eval="false" data-turbo-eval="false"></script>
 </body>
 
 </html>
